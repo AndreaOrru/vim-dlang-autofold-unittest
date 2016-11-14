@@ -7,7 +7,7 @@ setlocal foldmethod=expr
 setlocal foldexpr=DlangUnitTestFold(v:lnum)
 
 function! DlangUnitTestFold(lnum)
-  if getline(a:lnum) =~ '^\s*unittest\s{\s*$'
+  if getline(a:lnum) =~ '^\s*unittest\s*{*\s*$'
     return "a1"
   elseif getline(a:lnum) =~ '^\s*}\s*$'
     return "s1"
