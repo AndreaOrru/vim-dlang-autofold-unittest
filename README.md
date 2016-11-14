@@ -5,5 +5,9 @@
 
 ### Using vim-plug
 
-+ Add `Plug 'AndreaOrru/vim-dlang-autofold-unittest'` to your `~/.vimrc`.
++ Add `Plug 'AndreaOrru/vim-dlang-autofold-unittest', {'for': 'd'}` to your `~/.vimrc`.
 + Restart vim and `:PlugInstall` to install.
+
+## Usage
+
+Simply use `za` to toggle the folding.
